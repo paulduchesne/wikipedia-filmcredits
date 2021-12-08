@@ -1,16 +1,16 @@
 wikipedia_actor,character_name,wikidata_actor,wikidata_film
-/wiki/Steven_Seagal,DEA Agent John Hatcher,Q82110,http://www.wikidata.org/entity/Q109110
-/wiki/Keith_David,Max Keller,Q370918,http://www.wikidata.org/entity/Q109110
-/wiki/Joanna_Pacu%C5%82a,Professor Leslie Davalos,Q265996,http://www.wikidata.org/entity/Q109110
-/wiki/Basil_Wallace,"""Screwface""",Q11853951,http://www.wikidata.org/entity/Q109110
-"/wiki/Tom_Wright_(actor)"" class=""mw-redirect",Detective Charles Marks,,http://www.wikidata.org/entity/Q109110
-/wiki/Kevin_Dunn,FBI Agent Sal Roselli,Q706117,http://www.wikidata.org/entity/Q109110
-/wiki/Elizabeth_Gracen,Melissa Hatcher,Q448579,http://www.wikidata.org/entity/Q109110
-/wiki/Bette_Ford,Kate Hatcher,Q4898389,http://www.wikidata.org/entity/Q109110
-/wiki/Danielle_Harris,Tracey Hatcher,Q272944,http://www.wikidata.org/entity/Q109110
-/wiki/Al_Israel,Tito Barco,Q934917,http://www.wikidata.org/entity/Q109110
-/wiki/Michael_Ralph,"""Monkey""",Q6833736,http://www.wikidata.org/entity/Q109110
-/wiki/Danny_Trejo,Hector,Q223830,http://www.wikidata.org/entity/Q109110
-/wiki/Jeffrey_Anderson-Gunter,"""Nago""",Q16107193,http://www.wikidata.org/entity/Q109110
-/wiki/Peter_Jason,DEA Assistant Director Pete Stone,Q2076016,http://www.wikidata.org/entity/Q109110
-/wiki/Jimmy_Cliff,Himself,Q109063,http://www.wikidata.org/entity/Q109110
+/wiki/Steven_Seagal,DEA Agent John Hatcher,Q82110,Q109110
+/wiki/Keith_David,Max Keller,Q370918,Q109110
+/wiki/Joanna_Pacu%C5%82a,Professor Leslie,Q265996,Q109110
+/wiki/Basil_Wallace,"""Screwface""",Q11853951,Q109110
+"/wiki/Tom_Wright_(actor)"" class=""mw-redirect",Detective Charles Marks,,Q109110
+/wiki/Kevin_Dunn,FBI Agent Sal Roselli,Q706117,Q109110
+/wiki/Elizabeth_Gracen,Melissa Hatcher,Q448579,Q109110
+/wiki/Bette_Ford,Kate Hatcher,Q4898389,Q109110
+/wiki/Danielle_Harris,Tracey Hatcher,Q272944,Q109110
+/wiki/Al_Israel,Tito Barco,Q934917,Q109110
+/wiki/Michael_Ralph,"""Monkey""",Q6833736,Q109110
+/wiki/Danny_Trejo,Hector,Q223830,Q109110
+/wiki/Jeffrey_Anderson-Gunter,"""Nago""",Q16107193,Q109110
+/wiki/Peter_Jason,DEA Assistant Director Pete Stone,Q2076016,Q109110
+/wiki/Jimmy_Cliff,Himself,Q109063,Q109110
