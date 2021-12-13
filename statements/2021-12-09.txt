@@ -39,8 +39,8 @@
 |Q108946|P161|Q351812|P4633|"Lieutenant (junior grade) Sam Weinberg"|S143|Q328
 |Q108946|P161|Q2589276|P4633|"Lance Corporal Harold W. Dawson"|S143|Q328
 |Q108946|P161|Q372296|P4633|"Private First Class Louden Downey"|S143|Q328
-|Q108946|P161|Q502128|P4633|"Lieutenant Colonel Matthew Andrew Markinson"|S143|Q328
-|Q108946|P161|Q2452779|P4633|"Judge (Colonel) Julius Alexander Randolph"|S143|Q328
+|Q108946|P161|Q502128|S143|Q328
+|Q108946|P161|Q2452779|S143|Q328
 |Q108946|P161|Q3377714|P4633|"Private First Class William Santiago"|S143|Q328
 |Q108946|P161|Q315208|P4633|"Corporal Jeffrey Owen Barnes"|S143|Q328
 |Q108946|P161|Q136209|P4633|"Corporal Carl Edward Hammaker"|S143|Q328
