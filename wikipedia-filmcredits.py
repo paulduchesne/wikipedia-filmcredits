@@ -12,24 +12,24 @@ import time
 
 def value_extract(row, col):
 
-    # extract dictionary value. 
+    # extract dictionary value.
 
-    return pydash.get(row[col], 'value')    
-    
+    return pydash.get(row[col], 'value')
+
 def sparql_query(query, service):
 
-    # send sparql request, and formulate results into a dataframe. 
+    # send sparql request, and formulate results into a dataframe.
 
     r = requests.get(service, params = {'format': 'json', 'query': query})
     data = pydash.get(r.json(), 'results.bindings')
     data = pandas.DataFrame.from_dict(data)
-    for x in data.columns:    
+    for x in data.columns:
         data[x] = data.apply(value_extract, col=x, axis=1)
     return data
 
 def wikipedia_to_wikidata(link):
 
-    # retrieve wikidata id from en wikipedia page title. 
+    # retrieve wikidata id from en wikipedia page title.
 
     if 'wiki' in link:
       query = 'https://en.wikipedia.org/w/api.php?action=query&prop=pageprops&titles='
@@ -86,12 +86,10 @@ if extant_log.exists():
     extant = [x for x in extant.read().split('\n') if 'Q' in x]
     film_dict = [x for x in film_dict if x['wikidata'] not in extant]
 
-film_dict = film_dict[:200]
-
 commence = datetime.datetime.now()
 for i in range(len(film_dict)):
 
-  time.sleep(1)
+  time.sleep(4)
   t = (datetime.datetime.now()-commence)/(i+1)
   time_to_finish = (((t)*(len(film_dict)))+commence).strftime("%Y-%m-%d %H:%M:%S")
   print(f'processing: {i+1} of {len(film_dict)}; eta {time_to_finish}.')
@@ -108,11 +106,13 @@ for i in range(len(film_dict)):
         if isinstance(credit, str):
           if join_symbol in credit:
             join_location = credit.find(join_symbol)
-            entity = extract_actor(credit[:join_location]) 
+            entity = extract_actor(credit[:join_location])
             char = credit[join_location+len(join_symbol):]
             for char_split in ['</li>', '(credited', '(billed', ',', ':', ';']:
               char = char.split(char_split)[0].strip()
-            char = BeautifulSoup(char, 'lxml').text
+            char = BeautifulSoup(char, 'lxml').text.replace('\n', '')
+            if len(char) > 40:
+                char = ''
             if entity:
               filename = datetime.datetime.now().strftime('%Y-%m-%d')
               datapath = pathlib.Path.cwd() / 'data' / f'{filename}.txt'
