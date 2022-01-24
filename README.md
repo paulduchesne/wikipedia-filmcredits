@@ -1,2 +1,2 @@
-# wikipedia-filmcredits
+# Wikipedia filmcredits
 Extract cast film credits from Wikipedia for ingest into Wikidata.
